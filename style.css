@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap');
 
 #content {
     font-family: 'Montserrat', sans-serif;
@@ -10,7 +10,7 @@ nav a{
     text-align: center;
     color: #3D405B;
     text-decoration: none;    
-    border:#005F73 2px solid ;
+    padding: 35px;
 
 }
 
@@ -19,6 +19,8 @@ nav a:hover {
     color: #EE9B00;
 }    
 #hero-msg h1{
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
     text-align: center;
 }
 
@@ -31,6 +33,7 @@ nav a:hover {
 }
 main section{
     text-align: center;
+    box-sizing: border-box;
 }
 #background {
     height: 725px;
@@ -41,42 +44,67 @@ main section{
 }
 
 body {
+    font-size: 22px;
     background-color: #001219; 
+    font-family: 'Montserrat';
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
 }
+
 
 header {
     background-color:#81B29A;
 }
 
+h2 {
+    margin: 0;
+}
 h4 {
      background-color: #bb3e03;
 }
 
 .home-title{
+    font-family:'Amatic SC', cursive ;
+    font-weight: 700;
+    font-size: 2em;
     background-color:#E9D8A6;
+    margin-top: 10px;
 }
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
-.logo {
+#logo-link {
     width: 80px;
+    padding-top: 5px;
 }
 
 
 #hero-img{
+    
     width: 100%;
 }
 
-
-
+.msg h2 {
+    font-weight: 600;
+}
+.msg p {
+    font-size: .8em;
+    padding-bottom: 15px;
+}
 .msg  {
     color:#001219;
     background-color: #ffa90a;
+    line-height: 1.5em;
+    padding: 35px;
 }
 footer {
-    color:#ee9b00;
-    background-color:#005F73;
+    color:#3D405B;
+    background-color:#81B29A;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 
@@ -101,15 +129,28 @@ footer p a:hover {
     text-decoration: underline;
 }    
    
+footer .social img {
+    padding-top: 15px;
+}
 
 .book, .join {
     color: #EE9B00;
-     background-color:#077173;
-     text-decoration: none;    
+    background-color:#077173;
+    text-decoration: none;    
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover, .join:hover{
      color:#e07a5f;
      background-color:#3D405B;
 }
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;   
+}
 
+.card-img {
+    border: 10px solid #E07A5F;
+}
