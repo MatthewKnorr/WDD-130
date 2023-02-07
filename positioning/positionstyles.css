@@ -210,9 +210,9 @@
   width: 200px;
   height: 400px;
   background-color: gold;
-  grid-column: 3/4;
+  grid-column: 2/4;
   grid-row: 3/4;
-  margin-right: 100px;
+  margin-left: 50px;
 
 }
 
