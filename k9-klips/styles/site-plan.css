@@ -7,24 +7,23 @@ Fonts are separated by a | */
   --primary-color: #003637;
   --secondary-color: #F2A283 ;
   --accent1-color: #6C3A52;
-  --accent2-color: #789A47;
+  --accent2-color: #070A15;
 
   /* change the values below to your chosen font(s) */
   --heading-font: 'Montserrat', Verdana;
-  --paragraph-font:'Roboto', Verdana;
-  
+  --paragraph-font:'Roboto', Arial;
+  /* #6C6C6C */
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: #003637;  /* headlines on a white background */ 
-  --headline-color-on-color: #6C3A523; /* headlines on a colored background */ 
+  --headline-color-on-color: #F2A283; /* headlines on a colored background */ 
   --paragraph-color-on-white: #003637; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #6C3A52; /* paragraph text on a colored background */ 
+  --paragraph-color-on-color: #B87A98; /* paragraph text on a colored background */ 
   --paragraph-background-color: #003637  ;
-  --nav-link-color: #003637;
-  --nav-background-color: #F2A283;
-  --nav-hover-link-color: #6C3A52;
+  --nav-link-color: #070A15;
+  --nav-background-color: #B87A98;
+  --nav-hover-link-color: #F2A283;
   --nav-hover-background-color: #003637;
 }
-
 
 /*  Look around below...but DON'T CHANGE ANYTHING! */
 
@@ -32,8 +31,11 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 4em;
-  font-size: 18px;
+  font-size : 18px;
   text-align: center;
+  background-color: #FFFDD0;
+  border: 3px solid #003637 ;
+  border-radius:5px;
 }
 img {
   display: block;
