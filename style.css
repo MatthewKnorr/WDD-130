@@ -197,7 +197,7 @@ h2 {
              
 
 footer {
-    background-color: #6f7364;
+    background-color: #81B29A;
     padding: 25px 50px;
     margin-top: 200px; 
     display: flex;
@@ -206,16 +206,18 @@ footer {
 }
          
 footer a {
-    color:#ee9b00;
+    color:#3D405B;
     font-size: 1.2em;
-    background-color: #3D405B;
     text-decoration: none;    
 }    
 
 footer a:hover {
     color: #E07A5F;
     text-decoration: underline;
-    background-color: #001219 ;
+    background-color: #3D405B ;
+    border: 0px solid #3D405B;
+    border-radius: 3px;
+    transition: .5s;
 }    
 
 footer p {
@@ -230,6 +232,25 @@ footer .social img {
     padding-top: 15px;
 }
 
+
+.sub-info {
+    text-align: center;
+    margin-top: 20px;
+   
+}
+
+.sub-info h2{
+    color: #E07A5F;
+    border: 2px solid #3D405B;
+    background-color: #3D405B;
+    border-radius: 5px;
+}
+
+.sub-info p{
+    color: #3D405B;
+    background-color:#81B29A ;
+    border-radius: 3px;
+}
 
 
 @media screen and (max-width: 900px) {
