@@ -6,8 +6,8 @@ Fonts are separated by a | */
   /* change the values below to your colors from your palette */
   --primary-color: #003637;
   --secondary-color: #F2A283 ;
-  --accent1-color: #6C3A52;
-  --accent2-color: #070A15;
+  --accent1-color: #DE7403;
+  --accent2-color: #6C3A52;
 
   /* change the values below to your chosen font(s) */
   --heading-font: 'Roboto',sans-serif;
@@ -17,10 +17,10 @@ Fonts are separated by a | */
   --headline-color-on-white: #003637;  /* headlines on a white background */ 
   --headline-color-on-color: #F2A283; /* headlines on a colored background */ 
   --paragraph-color-on-white: #003637; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #B87A98; /* paragraph text on a colored background */ 
+  --paragraph-color-on-color: #DE7403; /* paragraph text on a colored background */ 
   --paragraph-background-color: #003637  ;
-  --nav-link-color: #070A15;
-  --nav-background-color: #B87A98;
+  --nav-link-color: #6C3A52;
+  --nav-background-color: #DE7403;
   --nav-hover-link-color: #F2A283;
   --nav-hover-background-color: #003637;
 }
