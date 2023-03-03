@@ -109,7 +109,8 @@ h2 {
     font-weight: 700;
     font-size: 2.5em;
     color:#E9D8A6;
-    
+    /* font-size: 25px;
+    color: #6f7364; */
     margin-top: 10px;
 }
 
@@ -151,18 +152,18 @@ h2 {
 .home-grid {
     display: grid;
     grid-template-columns: 10fr;
+    grid-gap: 100px;
     
 }
 
 .rivers-card {
-    grid-column:2/4 ;
+    grid-column:1/6;
     grid-row: 2/3;
 }
 
 .camping-card {
-    grid-column: 5/7;
+    grid-column:6/8 ;
     grid-row: 2/3;
-    padding-left: 150px;
 }
 
 .rapids-card {
@@ -274,10 +275,7 @@ footer .social img {
     #hero-msg h4 {
         display: none;
     }
-    .home-title {
-        font-size: 25px;
-        color: #6f7364;
-    }
+    
     .rivers-card, .camping-card, .rapids-card { 
         margin: 50px auto;
         width: 60%;
