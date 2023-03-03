@@ -293,3 +293,62 @@ footer .social img {
     }
 }
             
+/* 
+///////////////////////// 
+      SUBPAGE CSS
+////////////////////////
+*/
+/* 
+.sub-info img {
+    width: 50%;
+    z-index: 1;
+} */
+
+.sub-info {
+    display: grid;
+    text-align: center;
+}
+
+.sub-info h2{
+    color: #F2CC8F;
+    background-color:#077173;
+    font-size: 26px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    /* margin-top: -300px; */
+    width: 300px;
+}
+.salmon-river-wrapper {    
+    font-size: 26px;
+    border-radius: 5px;
+}
+
+
+#salmon-river {
+    background-image: url(/images/salmonriver.png);
+    width: 1100px;
+    height: 900px;
+    background-repeat: no-repeat;
+}
+
+#horseshoe-river {
+    background-image: url(/images/horseshoe.png);
+    width: 1000px;
+    height: 700px;
+    background-repeat: no-repeat;
+}
+
+#green-river {
+    background-image: url(/images/greenriver.png);
+    width: 1100px;
+    height: 900px;
+    background-repeat: no-repeat;
+}
+
+#green-river2 {
+    background-image: url(/images/green-river2.png);  
+    width: 1100px;
+    height: 900px;
+    background-repeat: no-repeat;
+}
+
