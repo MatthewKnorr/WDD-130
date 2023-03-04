@@ -315,10 +315,26 @@ footer .social img {
     font-size: 26px;
     padding: 15px 30px;
     border-radius: 5px;
-    /* margin-top: -300px; */
-    width: 300px;
+    margin-top: -300px;
+    width: 300px;;
 }
+
+.sub-info p {
+    background-color:#b5503487;
+    color: #7a81bb;
+    padding: 15px 30px;
+    width: 1000px;
+    border: 5px ridge #6f7364;
+    border-radius: 5px;
+    /* put in wrapper for the main 3 ajust for the 4th margin-bottom: 100px; */
+}
+
+.sub-info img {
+
+}
+
 .salmon-river-wrapper {    
+
     font-size: 26px;
     border-radius: 5px;
 }
