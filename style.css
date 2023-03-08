@@ -334,9 +334,10 @@ footer .social img {
 form {
     /* Center the form on the page */
     margin: 0 auto;
+    margin-top: 10px;
     width: 400px;
     /* Form outline */
-    padding: 1em;
+    padding: 100px;
     border: 1px solid #ccc;
     border-radius: 1em;
     color:#7a81bb ;
@@ -372,6 +373,7 @@ form {
   
     /* Match form field borders */
     border: 1px solid #999;
+    margin-left: 4px;
   }
   
   input:focus,
@@ -391,12 +393,16 @@ form {
   .button {
     /* Align buttons with the text fields */
     padding-left: 90px; /* same size as the label elements */
+    text-align: center;
   }
   
   button {
-    /* This extra margin represent roughly the same space as the space
-       between the labels and their text fields */
-    margin-left: 0.5em;
+    background-color: mediumspringgreen;
+    border: 1px mediumspringgreen solid;
+    border-radius: 2px;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
   }
   
 
