@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K9 - KLIPS</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<header>
+    <nav>
+        <div class="main-link">
+            <button>
+                <a href="./index.html">Homepage</a>
+            </button>
+        </div>
+        <div id="color-block">
+            <div id="logo">
+                <img src="/images/Small.png" alt="K9 small logo">
+            </div>
+        </div>
+        <div class="links">
+            <button>
+                <a href="./services.html">Services</a>
+            </button>
+            <button>
+                <a href="./contactus.html">Contact Us</a>
+            </button>
+        </div>
+        <div class="contact-info">
+            <div class="phone-number">
+                <p>(123) 456 - 7890</p>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <main>
+        <div id="feedback"></div>
+        <div class="contact-form">
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                    <li>
+                        <input type="text" id="name" name="user_name" placeholder="Name" />
+                    </li>
+                    <li>
+                        </br></br>
+                        <input type="email" id="mail" name="user_email" placeholder="Email" />
+                    </li>
+
+                    <li>
+                        </br></br>
+                        <textarea id="msg" name="user_message" placeholder="Reason"></textarea>
+                    </li>
+                    <li class="button">
+                        </br></br></br></br>
+                        <button type="submit">Send your message</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function (e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+</body>
+
+<footer>
+    <div class="footer-links">
+        <div id="trademark">
+            <p>K9-KLIPS &copy; 2015</p>
+        </div>
+        <button>
+            <a href="./services.html">Services Offered</a>
+        </button>
+        <button>
+            <a href="./contactus.html">Contact Us</a>
+        </button>
+        <button>
+            <a href="/k9-klips/site-plan.html">Site Plan</a>
+        </button>
+        <div class="number">
+            <p>(123) 456 - 7890</p>
+        </div>
+        <div class="addres">
+            <p>123W 456E, American Fork, UT 84003</p>
+        </div>
+    </div>
+</footer>
+
+</html>
