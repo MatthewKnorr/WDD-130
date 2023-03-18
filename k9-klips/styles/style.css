@@ -23,11 +23,20 @@
     */
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+
 html {
   margin: 0 auto;
   max-width: 1600px;
   background-color: var(--primary-color);
-  font-family: Helvetica, sans-serif;
+  /* font-family: 'Roboto', 'Montserrat', sans-serif; */
+}
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+h1,h2{
+  font-family: 'Roboto', sans-serif;
 }
 
 nav {
@@ -56,6 +65,7 @@ nav img {
   color: var(--secondary-color);
 }
 
+
 .links {
   grid-gap: 150px;
   margin-left: 50px;
@@ -70,6 +80,18 @@ nav img {
   border-radius: 4px;
   border: var(--accent-color-two) 2px solid;
 }
+
+.current-link button{
+  background-color: var(--primary-color);
+  border: solid 1px transparent;
+}
+
+.current-link button:hover{
+  border: solid 1px transparent;
+  transition: .5s;
+  background-color: var(--accent-color-two);
+}
+
 
 button:hover {
   background-color: var(--primary-color);
@@ -184,7 +206,7 @@ h2 {
 }
 
 .services {
-  margin-bottom: 150px;
+  margin-bottom: 80px;
 }
 
 .services .info {
@@ -366,9 +388,9 @@ button {
 }
 
 footer {
-  margin-top: 50px;
   background-color: var(--accent-color-one);
   border-radius: 5px;
+  margin-top: 50px;
 }
 
 #trademark p {
@@ -395,7 +417,7 @@ footer {
   font-size: 16px;
   height: 40px;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 15px;
   border-radius: 5px;
 }
 
@@ -420,3 +442,89 @@ footer {
   height: 15px;
   border-radius: 5px;
 }
+
+
+
+
+@media screen and (max-width: 1500px) {
+  :root {
+    --set-width-responsive: 100%
+  }
+  html {
+    /* overflow: hidden; */
+    /* padding: 0 auto;
+    margin: 0 auto; */
+    max-width: 1200px;
+    background-color: var(--primary-color)  }
+
+  nav{
+    width: 1200px;
+  }
+
+  .background-image img{
+    width: 1200px;
+    border-radius: 3px;
+  }
+
+  .phone-number p {
+    margin: 0 auto;
+  }
+
+  .mission-statement {
+    margin-top: 0;
+    padding-bottom: 0;
+  }
+
+  .mission-statement h1 {
+    margin-top: -350px;
+  }
+
+  .mission-statement p {
+    margin-bottom:20px;
+  }
+
+  .services img {
+    margin-left: 0
+  }
+  .services .info {
+    margin-left: 45%;
+  }
+
+
+  .little-about .img  {
+   margin-left: 275px;
+  }
+  .img img{
+    width: 900px;
+  }
+
+  .little-about p{
+    width: 650px;
+     margin-left:25px
+  }
+
+  .little-about h2{
+    margin: -350px 0 0 75px;
+    width: 250px;
+  }
+  
+  .services img {
+    margin-top: -150px;
+  }
+  .services p{
+    width: 650px;
+    margin-left: -75px;
+  }
+
+  .services h2{
+    margin-top: -300px;
+    margin-left: 150px;
+    /* margin-right: 100px; */
+    width: 300px;
+  }
+
+  footer {
+    width: 1200px;
+  }
+}
+          
