@@ -23,8 +23,7 @@
     */
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
 
 html {
   margin: 0 auto;
@@ -33,10 +32,11 @@ html {
   /* font-family: 'Roboto', 'Montserrat', sans-serif; */
 }
 p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-h1,h2{
-  font-family: 'Roboto', sans-serif;
+h1,
+h2 {
+  font-family: "Roboto", sans-serif;
 }
 
 nav {
@@ -45,10 +45,6 @@ nav {
   background-color: var(--accent-color-one);
   border-radius: 8px;
   margin-top: 15px;
-}
-
-nav img {
-  height: 100px;
 }
 
 .main-link,
@@ -65,7 +61,6 @@ nav img {
   color: var(--secondary-color);
 }
 
-
 .links {
   grid-gap: 150px;
   margin-left: 50px;
@@ -81,17 +76,16 @@ nav img {
   border: var(--accent-color-two) 2px solid;
 }
 
-.current-link button{
+.current-link button {
   background-color: var(--primary-color);
   border: solid 1px transparent;
 }
 
-.current-link button:hover{
+.current-link button:hover {
   border: solid 1px transparent;
-  transition: .5s;
+  transition: 0.5s;
   background-color: var(--accent-color-two);
 }
-
 
 button:hover {
   background-color: var(--primary-color);
@@ -145,7 +139,7 @@ body {
 }
 
 .background-image {
-    text-align: left;
+  text-align: left;
 }
 
 .mission-statement {
@@ -205,22 +199,22 @@ h2 {
   margin: 25px;
 }
 
-.services {
+.info-wrapper .services {
   margin-bottom: 80px;
 }
 
-.services .info {
+.info-wrapper .services .info {
   margin-left: 800px;
 }
 
-.services p,
+.info-wrapper .services p,
 h2 {
   color: var(--secondary-color);
   border-radius: 5px;
   padding: 15px;
 }
 
-.services h2 {
+.info-wrapper .services h2 {
   color: var(--secondary-color);
   text-align: center;
   margin-top: -450px;
@@ -230,21 +224,20 @@ h2 {
   font-size: 32px;
 }
 
-.services p {
+.info-wrapper .services p {
   text-align: center;
   background-color: #6c3a52;
   font-size: 22px;
   width: 700px;
 }
 
-.services img {
+.info-wrapper .services img {
   width: 800px;
-  opacity: 100%;
   border-radius: 20px;
   margin-left: 100px;
 }
 
-.services .img {
+.info-wrapper .services .img {
   margin-top: 200px;
   text-align: left;
   position: relative;
@@ -262,33 +255,62 @@ h2 {
   text-align: center;
 }
 
+.tabs {
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tabs button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 25px 0 0 100px;
+}
+
+/* Change background color of buttons on hover */
+.tabs button:hover {
+  background-color: var(--accent-color-two);
+}
+
+/* Create an active/current tablink class */
+.tabs button.active {
+  color: var(--secondary-color);
+  background-color: var(--accent-color-two);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  margin-top: 10px;
+  border-top: none;
+  padding-bottom: 2.5rem;
+}
+
 .promo-picture {
-    position:relative;
-  margin-top: 50px;
   text-align: right;
-  z-index: -1;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 
 .promo-picture img {
-  width: 500px;
+  width: 560px;
+  height: 400px;
+  margin-top: 50px;
   border-radius: 1rem;
-  margin-right: 250px;
+  /* margin-right: 250px; */
   border: 5px solid #fdbd65;
-  box-shadow: 10px 10px 3px#aa7428;
+  box-shadow: 5px 5px 3px#aa7428;
 }
 
-.package-offered {
-  width: 800px;
-  margin-left: 250px;
-  background-color: var(--accent-color-two);
-  z-index: 1;
-  border-radius: .5rem;
-}
 .header {
-  margin-top: -230px;
-  padding-right: 550px;
+  margin-top: -300px;
   color: var(--secondary-color);
-  z-index: 1;
+  width: 60%;
+  text-align: center;
 }
 
 /* ############################
@@ -380,24 +402,29 @@ button {
   left: 0;
   right: 0;
   padding: 0.5em;
-  /* make this element invisible until we are ready for it */
   display: none;
 }
 .moveDown {
   margin-top: 3em;
 }
 
+#footer {
+  position: absolute;
+  bottom: 0px;
+  width: 83.5%;
+  border-radius: 5px;
+  background-color: var(--accent-color-one);
+}
+
 footer {
   background-color: var(--accent-color-one);
-  border-radius: 5px;
-  margin-top: 50px;
+  margin-top: 0px;
+  margin-top: 10px;
 }
 
 #trademark p {
-  color: #003637;
   font-size: 16px;
-  border-radius: 5px;
-  height: 15px;
+  color: #003637;
 }
 
 .footer-links {
@@ -443,88 +470,225 @@ footer {
   border-radius: 5px;
 }
 
-
-
-
-@media screen and (max-width: 1500px) {
-  :root {
-    --set-width-responsive: 100%
-  }
+@media screen and (max-width: 900px) {
+  /*================================================= 
+    NAV
+  =================================================*/
   html {
-    /* overflow: hidden; */
-    /* padding: 0 auto;
-    margin: 0 auto; */
-    max-width: 1200px;
-    background-color: var(--primary-color)  }
-
-  nav{
-    width: 1200px;
+    width: 500px;
+    height: 900px;
   }
 
-  .background-image img{
-    width: 1200px;
-    border-radius: 3px;
+  nav {
+    width: 480px;
+    margin-top: 5px;
+    height: 65px;
+    border-radius: 4px;
   }
 
-  .phone-number p {
-    margin: 0 auto;
+  .main-link,
+  .links {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .main-link a,
+  .links a {
+    font-size: 14px;
+  }
+
+  .main-link button,
+  .links button {
+    width: 100px;
+  }
+
+  .links {
+    grid-gap: 35px;
+    margin: 0px;
+    margin-left: 10px;
+  }
+
+  .current-link button {
+    margin-left: 10px;
+  }
+
+  #logo img {
+    width: 55px;
+    height: 45px;
+  }
+
+  #color-block {
+    width: 55px;
+    height: 55px;
+    margin-left: 30px;
+    margin-right: 25px;
+  }
+
+  .contact-info {
+    display: none;
+  }
+
+  .phone-number {
+    display: none;
+  }
+
+  /*================================================= 
+    Homepage
+  =================================================*/
+
+  .background-image img {
+    width: 480px;
+    height: 175px;
   }
 
   .mission-statement {
-    margin-top: 0;
-    padding-bottom: 0;
+    padding: 0;
+    margin-left: 85px;
+    margin-top: -175px;
   }
 
   .mission-statement h1 {
-    margin-top: -350px;
+    margin: 0;
+    width: 100px;
+    font-size: 16px;
+    margin-left: 95px;
   }
 
   .mission-statement p {
-    margin-bottom:20px;
-  }
-
-  .services img {
-    margin-left: 0
-  }
-  .services .info {
-    margin-left: 45%;
-  }
-
-
-  .little-about .img  {
-   margin-left: 275px;
-  }
-  .img img{
-    width: 900px;
-  }
-
-  .little-about p{
-    width: 650px;
-     margin-left:25px
-  }
-
-  .little-about h2{
-    margin: -350px 0 0 75px;
-    width: 250px;
-  }
-  
-  .services img {
-    margin-top: -150px;
-  }
-  .services p{
-    width: 650px;
-    margin-left: -75px;
-  }
-
-  .services h2{
-    margin-top: -300px;
-    margin-left: 150px;
-    /* margin-right: 100px; */
+    margin: 0;
+    font-size: 16px;
     width: 300px;
   }
 
+  .little-about .info h2 {
+    width: 126px;
+    margin-left: 155px;
+    font-size: 16px;
+    margin-top: -100px;
+  }
+
+  .little-about .info p {
+    width: 400px;
+    font-size: 14px;
+    margin-top: 0;
+    margin-left: 25px;
+  }
+
+  .little-about .img,
+  .services .img {
+    padding: 0;
+    text-align: left;
+    margin: 10px 0px 20px 85px;
+  }
+
+  .little-about img {
+    width: 300px;
+  }
+
+  .info-wrapper .services img {
+    width: 300px;
+  }
+
+  .services .img {
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 100px;
+  }
+
+  .services .info h2 {
+    width: 126px;
+    margin-left: 155px;
+    font-size: 16px;
+    margin-top: -100px;
+  }
+
+  .services .info p {
+    width: 400px;
+    font-size: 14px;
+    margin-top: 0;
+    margin-left: 25px;
+  }
+
+  .info-wrapper .services h2 {
+    margin-top: -175px;
+    text-align: center;
+    width: 136px;
+  }
+  .info-wrapper .services {
+    margin-bottom: 30px;
+  }
+  .info-wrapper .services .info {
+    margin-left: 0px;
+  }
+
+  .info-wrapper .services img {
+    width: 301px;
+  }
+
+  .info-wrapper .services .img {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  /*================================================= 
+    Services Page
+  =================================================*/
+
+  .tabs button {
+    width: 100px;
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .tabs {
+    margin: 10px 0 0 0;
+    padding: 0;
+  }
+
+  .promo-picture {
+    text-align: center;
+    /* margin-right: 10px;
+    margin-top: 10px; */
+  }
+  
+
+  .promo-picture img {
+    width: 300px;
+    height: 200px;
+    margin-top: 10px;
+  }
+  
+  .header {
+    margin-top: -0px;
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+
+  /*================================================= 
+    Footer
+  =================================================*/
+
   footer {
-    width: 1200px;
+    width: 480px;
+    border-radius: 5px;
+    margin-top: 30px;
+  }
+
+  .footer-links button {
+    font-size: 11px;
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+  }
+
+  #trademark p,
+  .number p {
+    font-size: 10px;
+    width: 50px;
+  }
+  .addres p {
+    font-size: 8px;
+    width: 70px;
   }
 }
-          
