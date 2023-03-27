@@ -12,9 +12,7 @@
 <header>
     <nav>
         <div class="main-link">
-            <button>
-                <a href="index.html">Homepage</a>
-            </button>
+            <a href="index.html"><button>Homepage</button></a>
         </div>
         <div id="color-block">
             <div id="logo">
@@ -23,13 +21,9 @@
         </div>
         <div class="links">
             <div class="current-link">
-                <button>
-                    <a href="./services.html">Services</a>
-                </button>
+                <a href="./services.html"><button>Services</button></a>
             </div>
-            <button>
-                <a href="./contactus.html">Contact Us</a>
-            </button>
+            <a href="./contactus.html"><button>Contact Us</button></a>
         </div>
         <div class="contact-info">
             <div class="phone-number">
@@ -42,7 +36,6 @@
 <body>
     <main>
         <div id="content">
-            <!-- Package one -->
             <div class="tabs">
                 <button class="tablinks" onClick="openCity(event,'Small')">Small Dog</button>
                 <button class="tablinks" onClick="openCity(event,'Medium')">Medium Dog</button>
@@ -55,12 +48,9 @@
                         <img src="./images/towel-yorki.jpg" alt="">
                     </div>
                     <div class="header">
-
                         <h1>
                             Small Dog
                         </h1>
-
-                        <!-- <div class="package-offered"> -->
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis soluta consequatur
                             beatae
                             facilis veniam asperiores modi, necessitatibus nulla ipsa eveniet a illo exercitationem
@@ -86,19 +76,15 @@
                 </div>
             </div>
         </div>
-        <!-- Package two -->
         <div id="Medium" class=tabcontent>
             <div class="service">
                 <div class="promo-picture">
                     <img src="./images/pampered-dog.jpg" alt="">
                 </div>
                 <div class="header">
-
                     <h1>
                         Medium Dog
                     </h1>
-
-                    <!-- <div class="package-offered"> -->
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis soluta consequatur
                         beatae
                         facilis veniam asperiores modi, necessitatibus nulla ipsa eveniet a illo exercitationem
@@ -127,19 +113,15 @@
             </div>
         </div>
         </div>
-        <!-- Package three -->
         <div id="Large" class=tabcontent>
             <div class="service">
                 <div class="promo-picture">
                     <img src="./images/funny-lab.jpg" alt="">
                 </div>
                 <div class="header">
-
                     <h1>
                         Large Dog
                     </h1>
-
-                    <!-- <div class="package-offered"> -->
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis soluta consequatur
                         beatae
                         facilis veniam asperiores modi, necessitatibus nulla ipsa eveniet a illo exercitationem
@@ -168,19 +150,15 @@
             </div>
         </div>
         </div>
-        <!-- Package Custom -->
         <div id="Custom" class=tabcontent>
             <div class="service">
                 <div class="promo-picture">
                     <img src="./images/sink_cat.jpg" alt="">
                 </div>
                 <div class="header">
-
                     <h1>
                         Custom Animal
                     </h1>
-
-                    <!-- <div class="package-offered"> -->
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis soluta consequatur
                         beatae
                         facilis veniam asperiores modi, necessitatibus nulla ipsa eveniet a illo exercitationem
@@ -208,49 +186,44 @@
                 </div>
             </div>
         </div>
-
-        </div>
-        </div>
     </main>
-    <script>
-        function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-    </script>
+    <footer>
+        <div class="footer-links">
+            <div id="trademark">
+                <p>K9-KLIPS &copy; 2023</p>
+            </div>
+            <a href="./index.html" type="button"><button>HomePage</button></a>
+
+            <a href="./contactus.html"><button>Contact Us</button></a>
+
+            <a href="/k9-klips/site-plan.html"><button>Site Plan</button></a>
+
+            <div class="number">
+                <p>(123) 456 - 7890</p>
+            </div>
+            <div class="addres">
+                <p>123W 456E, American Fork, UT 84003</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
-<footer>
-    <div class="footer-links">
-        <div id="trademark">
-            <p>K9-KLIPS &copy; 2023</p>
-        </div>
-        <button>
-            <a href="./services.html">Services Offered</a>
-        </button>
-        <button>
-            <a href="./contactus.html">Contact Us</a>
-        </button>
-        <button>
-            <a href="/k9-klips/site-plan.html">Site Plan</a>
-        </button>
-        <div class="number">
-            <p>(123) 456 - 7890</p>
-        </div>
-        <div class="addres">
-            <p>123W 456E, American Fork, UT 84003</p>
-        </div>
-    </div>
-</footer>
+<script>
+    function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
 
 </html>
