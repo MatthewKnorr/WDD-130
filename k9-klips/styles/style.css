@@ -87,7 +87,7 @@ nav {
 #logo img {
   width: 95px;
   height: 85px;
-  rotate: -45deg;
+  transform: rotate(-45deg);
   padding-right: 10px;
 }
 
@@ -97,7 +97,7 @@ nav {
   width: 95px;
   height: 95px;
   background-color: var(--accent-color-two);
-  rotate: 45deg;
+  transform: rotate( 45deg);
   margin-left: 50px;
 }
 
