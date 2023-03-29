@@ -1,5 +1,5 @@
-<!DOCTYPE >
-<html lang="zxx en">
+<!DOCTYPE>
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
@@ -112,7 +112,7 @@
                 </div>
             </div>
         </div>
-        </div>
+
         <div id="Large" class=tabcontent>
             <div class="service">
                 <div class="promo-picture">
@@ -149,7 +149,7 @@
                 </div>
             </div>
         </div>
-        </div>
+
         <div id="Custom" class=tabcontent>
             <div class="service">
                 <div class="promo-picture">
@@ -187,6 +187,7 @@
             </div>
         </div>
     </main>
+
     <footer>
         <div class="footer-links">
             <div id="trademark">
@@ -196,7 +197,7 @@
 
             <a href="./contactus.html" class="button">Contact Us</a>
 
-            <a href="/k9-klips/site-plan.html"class="button">Site Plan</a>
+            <a href="/k9-klips/site-plan.html" class="button">Site Plan</a>
 
             <div class="number">
                 <p>(123) 456 - 7890</p>
@@ -207,20 +208,18 @@
         </div>
     </footer>
 
-</body>
-
-<script>
-    function openCity(evt, cityName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
         }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";}
-</script>
-
+    </script>
